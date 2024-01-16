@@ -24,4 +24,5 @@ console.log(newString);
 const url = "https://google.com/home%20work"
 // url.replace('%20','-')
 // console.log(url.replace('%20', '-'));
-console.log(url.includes('%20'));
+console.log(url.includes('%20')); //shows the elements present in the url or not output will be in boolean 
+
