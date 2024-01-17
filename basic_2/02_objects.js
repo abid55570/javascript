@@ -64,3 +64,33 @@ console.log(tinderUser.hasOwnProperty('isLogged'));// he we cross check or ask t
 //*******************************************//
 // rest i need to learn from 
 // inspect page>>>> console >>>> type object >>> get the properties 
+
+//  DESTRUCTURING >>>>>>>>>>>>>
+
+const course = {
+    coursename: "javascript",
+    price : "456",
+    courseValue: "java"
+}
+
+//course.courseValue // this make it very complex for each extraction 
+
+const {courseValue : Value} = course
+// above we put the constant for a variable to get from "course" and what the value we want >> put it in curly brackets 
+// here -- :Value is the destructuring by which i can use the other variable (DESTRUCTURING PROCESS) which gives same value 
+
+console.log(Value);
+
+
+// this is in react 
+// const navbar = (props.comapny ) => {
+//     // but we use curly bracket and destructure this in react such as  
+//     const navbar = ({comapny} ) => {
+
+
+// }
+
+// navbar(company = "barter")
+
+// to know about API nature - visit json API formatter 
+// randomuser.me >>>> generate randon api for study purpose
