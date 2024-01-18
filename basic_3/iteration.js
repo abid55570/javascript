@@ -86,13 +86,23 @@ const arr = [1,2,3,4,5]
 //     return num>4}) //if we use scope then use return then it will give value
 
 // console.log(newNums);
-const myNums = [1,2,3,4,5,6,7,8,9,10]
+// const myNums = [1,2,3,4,5,6,7,8,9,10]
 
 
-const newNums = []
-myNums.forEach((num) => {
-    if (num > 4) {
-        newNums.push(num)
-    }
-});
-console.log(newNums);
+// const newNums = []
+// myNums.forEach((num) => {
+//     if (num > 4) {
+//         newNums.push(num)
+//     }
+// });
+// console.log(newNums);
+
+const mynumbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const NewNums = mynumbers.map( (num) => {return (num) + 10})
+
+const NewNums = mynumbers
+.map((num) => num*10)
+.map( (num) =>num +1 )
+.filter( (num) => num>=40 )
+console.log(NewNums);
