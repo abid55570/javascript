@@ -35,3 +35,64 @@ const arr = [1,2,3,4,5]
 // map >>>>>>>>>>>>>>>>>>>>>>>
 
 // foreach >>> fetching the data from databases
+// const coding = ["js", "ruby", "java", "python", "react"]
+
+// coding.forEach( (item) => {
+//     console.log(item);
+// })
+
+// const mycoding = [
+//     {
+//         languageName : "java",
+//         languageFileName: "js"
+//     },
+//     {
+//         languageName : "python",
+//         languageFileName: "py"
+//     },
+//     {
+//         languageName : "react",
+//         languageFileName: ".js"
+//     },
+//     {
+//         languageName : "c",
+//         languageFileName: "c"
+//     },
+//     {
+//         languageName : "text",
+//         languageFileName: "txt"
+//     }
+// ]
+
+// mycoding.forEach( (item) => {
+//     console.log(item.languageName);
+// })
+
+// const coding = ["js", "ruby", "java", "python", "react"]
+
+// const values = coding.forEach((item) =>{
+//     console.log(item);
+//     return item
+// })
+// console.log(values); // this do not return values || undefined
+
+
+// const mynums = [1,2,3,4,5,6,7,8,9,10]
+// const newNums = mynums.filter((num)=>num>4)
+// console.log(newNums);
+
+// const mynums = [1,2,3,4,5,6,7,8,9,10]
+// const newNums = mynums.filter((num)=>  {
+//     return num>4}) //if we use scope then use return then it will give value
+
+// console.log(newNums);
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+
+const newNums = []
+myNums.forEach((num) => {
+    if (num > 4) {
+        newNums.push(num)
+    }
+});
+console.log(newNums);
